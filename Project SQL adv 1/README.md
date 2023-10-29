@@ -14,10 +14,10 @@
 
 ## 1. Найдите количество вопросов, которые набрали больше 300 очков или как минимум 100 раз были добавлены в «Закладки».
 
-SELECT COUNT(p.id)
-FROM stackoverflow.posts AS p
-WHERE p.post_type_id = 1
-AND (p.score > 300 OR p.favorites_count >= 100);
+SELECT COUNT(p.id)  
+FROM stackoverflow.posts AS p  
+WHERE p.post_type_id = 1  
+AND (p.score > 300 OR p.favorites_count >= 100);  
 
 ## 2. Сколько в среднем в день задавали вопросов с 1 по 18 ноября 2008 включительно? Результат округлите до целого числа.
 
